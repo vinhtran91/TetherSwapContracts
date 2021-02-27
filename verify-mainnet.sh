@@ -1,0 +1,10 @@
+echo "Verifying contracts"
+echo "⌛ Verifying TetherswapRouter Contract"
+npx hardhat verify --network mainnet 0x3dc429e4F888068B4df6ac4D72048D9B59D8158B '0xA31850f20A70102fC7378810c4b60Ff858631c16' '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+echo "⌛ Verifying TetherswapPriceOracle Contract"
+npx hardhat verify --network mainnet 0x61edc745eDD8c5A3df1625Fd38BEe3a073aA4171 '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f' '0xdac17f958d2ee523a2206206994597c13d831ec7' '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' '0x94f31ac896c9823d81cf9c2c93feceed4923218f' '0xa874fe207df445ff19e7482c746c4d3fd0cb9ace' '0xF79D6aFBb6dA890132F9D7c355e3015f15F3406F'
+echo "⌛ Verifying TetherswapPair Contract"
+npx hardhat verify --network mainnet 0x60B3e9B03B9Fa9F8bF5948D4275B9355A9c4eB13
+echo "⌛ Verifying TetherswapFactory Contract"
+npx hardhat verify --network mainnet 0xA31850f20A70102fC7378810c4b60Ff858631c16 '0x065d46a882F14a8BC02Ca366Fe23f211f20909b6' '0x065d46a882F14a8BC02Ca366Fe23f211f20909b6' '0xF50B57B8317aAAb8A9eC567751684Fb98F48DFBc' 250000000000 300000000000 200000000000 100000 500000000000 2500000000000 604800 2592000 500000 '0xdac17f958d2ee523a2206206994597c13d831ec7' '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' '0x94f31ac896c9823d81cf9c2c93feceed4923218f'
+echo "✅ Verification Done!"
